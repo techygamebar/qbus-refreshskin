@@ -1,3 +1,3 @@
 Config = {}
 
-Config.commandname = "refreshskin"
+Config.Commandname = "refreshskin"
