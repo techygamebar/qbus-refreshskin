@@ -1,4 +1,4 @@
-# Refresh skin  
+# Refresh skin QBUS
 Made with love :heart:
 
 # Command [Change in Config.lua]
