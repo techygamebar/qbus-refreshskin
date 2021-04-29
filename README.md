@@ -7,4 +7,4 @@ Made with love :heart:
 # [DISCORD](https://discord.com/invite/ZBhZ3gQbmU)
 
 # GIVE FEEDBACK
-'LEGEND|TGB#1058'
+`LEGEND|TGB#1058`
