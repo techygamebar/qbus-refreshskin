@@ -12,7 +12,7 @@ Citizen.CreateThread(function()
 end)
 
 -- FUNCTION
-function refreshskin()
+function refreshskin(health)
   local model = nil
   local gender = QBCore.Functions.GetPlayerData().charinfo.gender
   if gender == 1 then 
@@ -27,9 +27,15 @@ function refreshskin()
   SetModelAsNoLongerNeeded(model)
 
   TriggerServerEvent("qb-clothes:loadPlayerSkin") 
+    SetPedMaxHealth(PlayerId(), maxhealth)
+    Citizen.Wait(1000) 
+  SetEntityHealth(PlayerPedId(), health)
 end
 
 ---COMMAND
 RegisterCommand(Config.Commandname, function()
-  refreshskin()
+     local playerPed = PlayerPedId()
+  local maxhealth = GetEntityMaxHealth(playerPed)
+  local health = GetEntityHealth(playerPed)
+  refreshskin(health)
 end)
