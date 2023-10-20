@@ -15,6 +15,7 @@ end)
 function refreshskin(health)
   local model = nil
   local gender = QBCore.Functions.GetPlayerData().charinfo.gender
+  local maxhealth = GetEntityMaxHealth(playerPed)
   if gender == 1 then 
     model = GetHashKey("mp_f_freemode_01") 
   else 
